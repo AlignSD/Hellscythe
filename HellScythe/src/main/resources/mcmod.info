@@ -1,9 +1,9 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
+  "modid": "sword",
+  "name": "Aligns HellScythe",
+  "description": "Weapon mod.",
+  "version": "${1.0}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
