@@ -9,12 +9,13 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod.EventBusSubscriber
-
 public class CommonProxy {
 	
-	
+  public static void registerRenders(ModelRegistryEvent event) {
+	  registerRender(ExampleMod.mySword);
+  }
 
-  public static void registerRender(Item item ) {
+  public static void registerRender(Item item) {
 	  ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation( item.getRegistryName(), "inventory"));
   }
 	
@@ -23,8 +24,6 @@ public class CommonProxy {
     event.getRegistry().registerAll(ExampleMod.mySword);
   }
   
-  public static void registerRenders(ModelRegistryEvent event) {
-	  registerRender(ExampleMod.mySword);
-  }
+  
 
 }
